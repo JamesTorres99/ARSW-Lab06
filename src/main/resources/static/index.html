@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="./style/index.css">
 		
 		<script src="js/apimock.js"></script>
+		<script src="js/apiclient.js"></script>
 		<script src="js/app.js"></script>
 	</head>
 	<body>
@@ -22,15 +23,23 @@
 		</div>
 		<hr>
 		<div id="search-results">
-			<p id="result-name">Blank for testing</p>
-			<table id="result-blueprints-detail" style="border: 1px solid black">
-				<tr>
-					<th>Blueprint's name</th>
-					<th>Number of points</th>
-					<th></th>
-				</tr>
-			</table>
-			<h2 id="result-total-points">Total user's points: </h2>
+			<div>
+				<p id="result-name">Blank for testing</p>
+				<table id="result-blueprints-detail" style="border: 1px solid black">
+					<tr>
+						<th>Blueprint's name</th>
+						<th>Number of points</th>
+						<th></th>
+					</tr>
+				</table>
+				<h2 id="result-total-points">Total user's points: </h2>
+			</div>
+			<div class="contenedo">
+        		<div class="contenedor-nombre">
+            		<a class="actual-name" id="actual-name">Current blueprint:</a>
+        		</div>
+        		<canvas id="myCanvas"></canvas>
+   			</div>
 		</div>
 	</body>
 </html>
