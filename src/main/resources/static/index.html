@@ -1,11 +1,15 @@
 <html>
 	<head>
-		<meta charset="UTF-8"/>
-		<title>Laboratorio 6 - Cliente Pesado</title>
+		<title>Blueprints</title>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="/webjars/jquery/3.1.0/jquery.min.js"></script>
     	<script src="/webjars/bootstrap/4.1.2/js/bootstrap.min.js"></script>
     	<link rel="stylesheet" href="/webjars/bootstrap/4.1.2/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="./style/index.css">
+		
+		<script src="js/apimock.js"></script>
+		<script src="js/app.js"></script>
 	</head>
 	<body>
 		<div id="search-box">
@@ -13,7 +17,7 @@
 			<form id="author-blueprints>
 				<label for="author-name">Author: </label>
 				<input type="text" id="author-name" placeholder="Author's name"/>
-				<input type="submit" value="Get Blueprints"/>
+				<input type = "button" onclick="app.getAuthorBlueprints()" value="GetBlueprints"/>
 			</form>
 		</div>
 		<hr>
@@ -26,7 +30,7 @@
 					<th></th>
 				</tr>
 			</table>
-			<h2 id=result-total-points">Total user's points: </h2>
+			<h2 id="result-total-points">Total user's points: </h2>
 		</div>
 	</body>
 </html>
